@@ -324,8 +324,10 @@
 // export default ResumeBasedInterview;
 
 import React, { useState, useEffect } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+useNavigate
 const ResumeBasedInterview = () => {
+    const navigate = useNavigate();
   const handlePaste = (e) => {
     const pastedText = e.clipboardData.getData("text");
     if (pastedText.length > 500) {
@@ -477,7 +479,7 @@ const ResumeBasedInterview = () => {
               <button className="border-2 border-[#1b3022] text-[#1b3022] text-[10px] font-black uppercase tracking-widest px-8 py-3 hover:bg-[#1b3022] hover:text-[#fcfaf2] transition-all">
                 Save Cache
               </button>
-               <button className="bg-[#2d4f39] text-[#fcfaf2] text-[10px] font-black uppercase tracking-widest px-8 py-3 hover:opacity-90 transition-all">
+               <button onClick={()=>navigate("/interviewresultpage")} className="bg-[#2d4f39] text-[#fcfaf2] text-[10px] font-black uppercase tracking-widest px-8 py-3 hover:opacity-90 transition-all">
                 Final Transmission
               </button>
             </div>

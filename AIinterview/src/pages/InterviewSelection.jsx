@@ -192,7 +192,7 @@ const InterviewSelection = () => {
             <p className="text-[#5a7d64] text-[11px] leading-tight mb-6 flex-grow font-medium uppercase tracking-tighter">
               Solve real-world problems under timed conditions.
             </p>
-            <button onClick={()=>navigate("codingbasedpage")} className="w-full py-2 border border-[#1b3022] font-bold text-[10px] uppercase tracking-widest bg-transparent hover:bg-[#1b3022] hover:text-[#fcfaf2] flex items-center justify-center gap-2 transition-all">
+            <button onClick={()=>navigate("/codingbasedpage")} className="w-full py-2 border border-[#1b3022] font-bold text-[10px] uppercase tracking-widest bg-transparent hover:bg-[#1b3022] hover:text-[#fcfaf2] flex items-center justify-center gap-2 transition-all">
               Initialize <ArrowRight className="w-3 h-3" />
             </button>
           </div>
@@ -206,7 +206,7 @@ const InterviewSelection = () => {
             <p className="text-[#5a7d64] text-[11px] leading-tight mb-6 flex-grow font-medium uppercase tracking-tighter">
               OS, DBMS, CN, and System Design diagnostics.
             </p>
-            <button onClick={()=>navigate("")} className="w-full py-2 border border-[#1b3022] font-bold text-[10px] uppercase tracking-widest bg-transparent hover:bg-[#1b3022] hover:text-[#fcfaf2] flex items-center justify-center gap-2 transition-all">
+            <button onClick={()=>navigate("/corecsquestionnaire")} className="w-full py-2 border border-[#1b3022] font-bold text-[10px] uppercase tracking-widest bg-transparent hover:bg-[#1b3022] hover:text-[#fcfaf2] flex items-center justify-center gap-2 transition-all">
               Initialize <ArrowRight className="w-3 h-3" />
             </button>
           </div>
@@ -223,7 +223,7 @@ const InterviewSelection = () => {
             <p className="text-[#5a7d64] text-[11px] leading-tight mb-6 flex-grow font-medium uppercase tracking-tighter">
               4-hour live contest. Track your rank on the matrix.
             </p>
-            <button onClick={()=>navigate("")}  className="w-full py-2 border border-[#1b3022] font-bold text-[10px] uppercase tracking-widest bg-transparent hover:bg-[#1b3022] hover:text-[#fcfaf2] flex items-center justify-center gap-2 transition-all">
+            <button onClick={()=>navigate("/contestmode")}  className="w-full py-2 border border-[#1b3022] font-bold text-[10px] uppercase tracking-widest bg-transparent hover:bg-[#1b3022] hover:text-[#fcfaf2] flex items-center justify-center gap-2 transition-all">
               Initialize <ArrowRight className="w-3 h-3" />
             </button>
           </div>

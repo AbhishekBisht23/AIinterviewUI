@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Check, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const CodingBasedPage = ()=>{
+    const navigate = useNavigate();
   const [selectedCompany, setSelectedCompany] = useState('Google');
   const [difficulty, setDifficulty] = useState('Medium');
   const [numQuestions, setNumQuestions] = useState(10);
@@ -123,7 +125,7 @@ const CodingBasedPage = ()=>{
 
           {/* Action Button */}
           <div className="text-center">
-            <button className="bg-[#1b3022] text-[#fcfaf2] px-12 py-4 border-2 border-[#1b3022] font-black text-xs uppercase tracking-[0.2em] shadow-[8px_8px_0px_#d4d0b8] hover:bg-[#2d4f39] hover:shadow-none transition-all active:translate-x-1 active:translate-y-1">
+            <button onClick={()=>navigate("/resumebasedinterview")} className="bg-[#1b3022] text-[#fcfaf2] px-12 py-4 border-2 border-[#1b3022] font-black text-xs uppercase tracking-[0.2em] shadow-[8px_8px_0px_#d4d0b8] hover:bg-[#2d4f39] hover:shadow-none transition-all active:translate-x-1 active:translate-y-1">
               Start Coding Mock <ArrowRight className="inline ml-2 w-4 h-4" />
             </button>
             <p className="text-[9px] font-bold text-[#5a7d64] uppercase mt-4 tracking-tighter">Please complete all selections to continue</p>

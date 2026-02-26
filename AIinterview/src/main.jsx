@@ -15,6 +15,9 @@ import InterviewSelection from './pages/InterviewSelection.jsx'
 import ResumeBasedInterview from './pages/ResumeBasedInterview.jsx'
 import GithubRepoPage from './pages/githubrepopage.jsx'
 import CodingBasedPage from './pages/Codingbasedpage.jsx'
+import InterviewResultPage from './pages/InterviewResultPage.jsx'
+import CoreCSQuestionnaire from './pages/CoreCSQuestionnaire.jsx'
+import ContestMode from './pages/ContestMode.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
@@ -23,7 +26,10 @@ const router = createBrowserRouter(
       <Route path='resumeuploadpage' element={<ResumeUploadPage/>}/>
       <Route path='githubrepopage' element={<GithubRepoPage/>}/>
       <Route path='codingbasedpage' element={<CodingBasedPage/>}/>
+      <Route path='contestmode' element={<ContestMode/>}/>
+      <Route path='corecsquestionnaire' element={<CoreCSQuestionnaire/>}/>
       <Route path='resumebasedinterview' element={<ResumeBasedInterview/>}/>
+      <Route path='interviewresultpage' element={<InterviewResultPage/>}/>
       {/* <Route path='' element={<HomePage/>}/> */}
       <Route path='loginpage' element={<LoginPage/>} />
       <Route path='signuppage' element={<SignUpPage/>}/>
